@@ -7,8 +7,6 @@ export default function ChatPage() {
   const [input, setInput] = useState('');
   const [messages, setMessages] = useState([]);
   const [history, setHistory] = useState([]);
-
-  // Load chat history on mount
   useEffect(() => {
     const fetchHistory = async () => {
       try {
@@ -36,7 +34,7 @@ export default function ChatPage() {
     try {
       const res = await API.post('/chat', { message: input });
       const aiReply = { question: input, answer: res.data.response };
-      setMessages((prev) => [...prev.slice(0, -1), aiReply]); // replace question-only with full pair
+      setMessages((prev) => [...prev.slice(0, -1), aiReply]); 
     } catch {
       const errorReply = { question: input, answer: '_Assistant is currently unavailable._' };
       setMessages((prev) => [...prev.slice(0, -1), errorReply]);
@@ -67,7 +65,6 @@ export default function ChatPage() {
         </div>
       </aside>
 
-      {/* Chat Area */}
       <main style={{ flex: 1, padding: 20, display: 'flex', flexDirection: 'column' }}>
         <h2 style={{ marginBottom: 10 }}>🎯 Chat with CareerGPT</h2>
         <div style={{ flex: 1, overflowY: 'auto', padding: 10, border: '1px solid #ccc' }}>
