@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+body {
+  font-family: 'Kanit', sans-serif;
+}
+.v1{
+    display: none;
+}
+.logo{
+    width: 90px;
+    position: relative;
+    top: 30px;
+}
+.logon{
+    color: #582020;
+    font-weight: 700;
+    font-size: 35px;
+}
+header{
+    display: flex;
+    margin-left: 20px;
+}
+.main1{
+    margin-left: 150px;
+    margin-top: 120px;
+}
+.main{
+    font-size: 65px;
+    font-weight: 600;
+    line-height: 1.0;
+}
+.main span{
+    color: #582020;
+    font-size: 75px;
+    font-weight: 600;
+}
+.maind{
+    color: #000 !important;
+    font-size: 34px !important;
+    font-weight: 500 !important;
+}
+.butd{
+    display: flex;
+    gap: 40px;
+    margin-left: 200px;
+}
+.butd button{
+    background-color: #582020;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.main2 {
+  margin-top: 200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  padding: 4rem 2rem;
+  justify-items: center;
+}
+
+.card {
+  background: linear-gradient(135deg, #553939, #392727);
+  color: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 280px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease, background 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.m1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.m2 {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #d0d0d0;
+  line-height: 1.5;
+}
+.main2 > .card:nth-child(4) {
+  grid-column: 1 / 3;
+  justify-self: center;
+}
+.main2 > .card:nth-child(5) {
+  grid-column: 2 / 4;
+  justify-self: center;
+  margin-top: -250px;
+}
+.main3{
+    background-color: #887777C7;
+    border-radius: 50px;
+    font-weight: 300px;
+    font-size: 28px;
+    text-align: center;
+    width: 900px;
+    margin-left: 250px;
+    padding: 10px 20px;
+    margin-top: 180px;
+    margin-bottom: 20px !important;
+}
+.main3 p span{
+     color: #fff;
+     font-weight: 600;
+}
+.v2{
+    display: none;
+}
+@media screen and (max-width: 1024px) {
+  .v1 {
+    display: none;
+  }
+  .main1 {
+    margin-left: 40px;
+    margin-top: 100px;
+  }
+  .main {
+    font-size: 48px;
+    line-height: 1.2;
+  }
+  .main span {
+    font-size: 58px;
+  }
+  .maind {
+    font-size: 28px !important;
+  }
+  .butd {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 40px;
+    gap: 20px;
+  }
+  .main3 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .v2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .logo {
+    width: 70px;
+    top: 10px;
+  }
+  .logon {
+    font-size: 28px;
+    margin-top: 8px;
+    text-align: center;
+  }
+  .main1 {
+    margin: 80px 20px 0 20px;
+  }
+  .main {
+    font-size: 34px;
+  }
+  .main span {
+    font-size: 42px;
+  }
+  .maind {
+    font-size: 20px !important;
+    line-height: 1.4;
+  }
+  .butd {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-left: 0;
+    margin-top: 50px;
+  }
+
+  .butd button {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+
+  .main2 {
+    grid-template-columns: 1fr;
+    margin-top: 120px;
+    padding: 2rem 1rem;
+    width: 100px;
+    margin-left: 80px;
+  }
+  .main2 > .card:nth-child(4),
+  .main2 > .card:nth-child(5) {
+    grid-column: auto;
+    margin-top: 0;
+  }
+  .main3 {
+    margin-top: 80px;
+    font-size: 20px;
+    padding: 1rem;
+    border-radius: 30px;
+    margin-bottom: 10px;
+  }
+  .v1,
+  .v2 {
+    position: relative;
+    margin: 2rem auto 0 auto;
+    width: 100%;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,37 @@
+.pp1{
+    color:#400E0E;
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 0.5;
+}
+.pp2{
+    color: #000;
+    font-weight: 275px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 0.5;
+}
+.pp3{
+    color: #000;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+}
+.pp3 span button{
+    border: none;
+    color: #400E0E;
+    font-weight: bold;
+    font-size: 18px;
+    background: none;
+    cursor: pointer;
+}
+.lbut{
+    background-color: #582020;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 18px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 500;
+}

@@ -1,0 +1,155 @@
+.p1{
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    color:#400E0E;
+    line-height: 0.5;
+}
+.p2{
+    font-weight: 275px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 0.5;
+}
+.p3{
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+}
+.p3 button{
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color:#400E0E;
+    font-weight: bold;
+}
+.p4{
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  font-family: 'Kanit', sans-serif;
+}
+.input-wrapper {
+  border: 2px solid #582020;
+  margin-bottom: 20px;
+  width: 300px;
+  border-radius: 20px;
+  position: relative;
+  background-color: #fff;
+}
+
+legend {
+  font-weight: 500;
+  font-size: 28px;
+  color: #582020;
+}
+
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background-color: transparent;
+}
+.cbut{
+  background-color: #582020;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.ve1{
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .p1 {
+    font-size: 26px;
+  }
+  .p2 {
+    font-size: 22px;
+  }
+  .p3 {
+    font-size: 17px;
+  }
+  .p4 {
+    font-size: 18px;
+  }
+  .form {
+    padding: 0 2rem;
+    align-items: center;
+  }
+  .input-wrapper {
+    width: 100%;
+    max-width: 360px;
+  }
+  .legend {
+    font-size: 24px;
+  }
+  .cbut {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
+  .ve1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .p1 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .p2 {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  .p3 {
+    font-size: 16px;
+  }
+  .p3 button {
+    font-size: 16px;
+  }
+  .p4 {
+    font-size: 16px;
+  }
+
+  .form {
+    gap: 16px;
+    padding: 0 1.5rem;
+  }
+
+  .input-wrapper {
+    width: 100%;
+    border-radius: 14px;
+    padding: 0.5rem;
+  }
+
+  input {
+    font-size: 15px;
+  }
+
+  legend {
+    font-size: 22px;
+  }
+
+  .cbut {
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 16px;
+    width: 100%;
+  }
+
+  .ve1 {
+   display: none;
+  }
+}
